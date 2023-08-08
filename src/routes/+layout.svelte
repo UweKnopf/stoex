@@ -10,8 +10,11 @@
 	import { dev } from '$app/environment';
   	import { inject } from '@vercel/analytics';
   	inject({ mode: dev ? 'development' : 'production' });
+	//For Vercel speed insights
+	import WebVitals from '@rairulyle/svelte-web-vitals';
 </script>
 
+<WebVitals />
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
