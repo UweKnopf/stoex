@@ -24,8 +24,9 @@
                     />
                 </svg>
 				<p class="!text-sm opacity-80">Inventory Management for everybody</p>
+                <p class="!text-sm opacity-80">© 2023 Stoex UG</p>
 			</div>
-			<div class="hidden md:grid grid-cols-3 gap-8">
+			<div class="hidden md:grid grid-cols-2 gap-8">
 				<div class="space-y-6">
 					<h6 class="h6">Explore</h6>
 					<ul class="space-y-3">
@@ -37,23 +38,9 @@
 				<div class="space-y-6">
 					<h6 class="h6">Features</h6>
 					<ul class="space-y-3">
-						<li><a class="anchor" href="/elements/core">Tailwind</a></li>
-						<li><a class="anchor" href="/actions/clipboard">Svelte</a></li>
-						<li><a class="anchor" href="/utilities/codeblocks">Utilities</a></li>
-					</ul>
-				</div>
-				<div class="space-y-6">
-					<h6 class="h6">Project</h6>
-					<ul class="space-y-3">
-						<li>
-							<a class="anchor" href="https://github.com/skeletonlabs" target="_blank" rel="noreferrer">Github Organization</a>
-						</li>
-						<li>
-							<a class="anchor" href="https://www.npmjs.com/org/skeletonlabs" target="_blank" rel="noreferrer">NPM Organization</a>
-						</li>
-						<li>
-							<a class="anchor" href="https://www.npmjs.com/package/@skeletonlabs/skeleton" target="_blank" rel="noreferrer">NPM Package</a>
-						</li>
+						<li><a class="anchor" href="/elements/core">Data Insights</a></li>
+						<li><a class="anchor" href="/actions/clipboard">Automation</a></li>
+						<li><a class="anchor" href="/utilities/codeblocks">Privacy</a></li>
 					</ul>
 				</div>
 			</div>
@@ -64,26 +51,28 @@
 		<!-- Row 2 -->
 		<section class={cRowTwo}>
 			<p>
-				<a class="anchor" href="https://github.com/skeletonlabs/skeleton/blob/master/LICENSE" target="_blank" rel="noreferrer">
-					MIT License
+				<a class="anchor" href="/" target="_blank" rel="noreferrer">
+					Impressum
 				</a>
 				<span class="opacity-10 mx-2">|</span>
-				<a class="anchor" href="https://skeletonlabs.co/" target="_blank" rel="noreferrer">Skeleton Labs </a>
+				<a class="anchor" href="/" target="_blank" rel="noreferrer">
+                    Privacy Policy
+                </a>
 			</p>
 			<div class="flex space-x-4">
-				<a class="btn variant-soft" href="https://github.com/skeletonlabs/skeleton" target="_blank" rel="noreferrer">
+				<a class="btn variant-soft" href="/" target="_blank" rel="noreferrer">
 					<i class="fa-brands fa-github" />
 					<span class="hidden md:inline-block ml-2">Github</span>
 				</a>
-				<a class="btn variant-soft" href="https://discord.gg/EXqV7W8MtY" target="_blank" rel="noreferrer">
+				<a class="btn variant-soft" href="/" target="_blank" rel="noreferrer">
 					<i class="fa-brands fa-discord" />
 					<span class="hidden md:inline-block ml-2">Discord</span>
 				</a>
-				<a class="btn variant-soft" href="https://twitter.com/SkeletonUI" target="_blank" rel="noreferrer">
+				<a class="btn variant-soft" href="/" target="_blank" rel="noreferrer">
 					<i class="fa-brands fa-twitter" />
 					<span class="hidden md:inline-block ml-2">Twitter</span>
 				</a>
-				<a class="btn variant-soft" href="https://www.youtube.com/@skeletonlabs" target="_blank" rel="noreferrer">
+				<a class="btn variant-soft" href="/" target="_blank" rel="noreferrer">
 					<i class="fa-brands fa-youtube" />
 					<span class="hidden md:inline-block ml-2">YouTube</span>
 				</a>
