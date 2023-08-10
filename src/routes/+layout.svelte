@@ -1,5 +1,6 @@
 <script lang='ts'>
-  import CustomAppBar from '../lib/CustomAppBar.svelte';
+  	import CustomAppBar from '../lib/CustomAppBar.svelte';
+  	import CustomFooter from '../lib/CostumeFooter.svelte'
 
 	// The ordering of these imports is critical to your app working properly
 	import '@skeletonlabs/skeleton/themes/theme-modern.css';
@@ -30,4 +31,5 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<CustomFooter/>
 </AppShell>

@@ -1,0 +1,93 @@
+<script lang="ts">
+	
+	// eslint-disable-next-line no-undef
+	//const pkg = __PACKAGE__;
+
+	// Logo
+	
+
+	// Base Classes
+	const cBase = 'bg-surface-50 dark:bg-surface-900 border-t border-surface-500/10 text-xs md:text-base';
+	const cRowOne = 'flex flex-col md:flex-row justify-between items-center md:items-start space-y-5 md:space-y-0';
+	const cRowTwo = 'flex flex-col md:flex-row justify-between items-center md:items-start space-y-4 md:space-y-0';
+</script>
+
+<div class="page-footer {cBase} mt-48" >
+	<div class="w-full max-w-7xl mx-auto p-4 py-16 md:py-24 space-y-10">
+		<!-- Row 1 -->
+		<section class={cRowOne}>
+			<div class="grid grid-cols-1 gap-2 place-content-center place-items-center md:place-items-start">
+				<svg class="fill-token" width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                    <path
+                        fill-rule="evenodd"
+                        d="M19.855 10.21c5.07 0 9.398 1.736 12.495 4.588l.057-.017c.388-.12.72-.244.994-.37.879-.406 2.032-1.236 3.46-2.492-.232 2.188-.48 3.794-.747 4.818a19.306 19.306 0 0 1-.662 1.994 15.855 15.855 0 0 1 1.707 4.672c1.221 6.057-.871 8.735-5.727 10.23.037.18.065.373.086.58.173 1.772-.733 4.633-1.82 4.633-.716 0-1.181-.986-1.68-2.426-.155 1.666-.923 3.58-1.813 3.58-.958 0-1.467-1.767-2.21-4.022C23.618 37.75 23.05 40 22.046 40c-1.02 0-.46-3.177-2.181-4.523-8.721.47-16.057-2.718-16.057-11.916 0-1.693.405-3.346 1.147-4.88-.132-.257-.255-.51-.37-.761-.58-1.264-1.275-3.176-2.085-5.737 2.074 1.53 3.665 2.442 4.772 2.735.11.029.226.055.346.077 2.906-2.879 7.248-4.785 12.237-4.785ZM17.82 22.62c-2.947 0-5.336 2.294-5.336 5.124 0 2.83 2.389 5.124 5.336 5.124 2.946 0 5.335-2.294 5.335-5.124 0-2.76-2.27-5.009-5.115-5.12Zm7.573 6.4c-.891 0-1.362 1.883-1.362 2.727 0 .66.224 1.024.589 1.09.885.082.615-1.194 1.056-1.194.47 0 1.02 1.305 1.48 1.128.547-.322.338-1.024.149-1.578-.665-1.394-1.02-2.173-1.912-2.173Zm5.801-6.7c-2.03 0-3.676 2.014-3.676 4.5 0 2.485 1.646 4.5 3.676 4.5 2.03 0 3.677-2.015 3.677-4.5 0-2.486-1.646-4.5-3.677-4.5ZM18.5 25a3 3 0 1 1-.5 5.958 3 3 0 0 0 0-5.917c.162-.027.33-.041.5-.041ZM31 24c1.38 0 2.5 1.343 2.5 3s-1.12 3-2.5 3c-.171 0-.339-.02-.5-.06 1.141-.278 2-1.489 2-2.94 0-1.451-.859-2.662-2-2.94.161-.04.329-.06.5-.06Zm.284-18.586.324.207c.146.093.19.288.096.434l-2.39 3.655a.314.314 0 0 1-.433.093l-.324-.207a.314.314 0 0 1-.095-.434l2.39-3.655a.314.314 0 0 1 .432-.093Zm-23.177.554 1.94 2.75c.1.141.066.337-.076.437l-.319.22a.314.314 0 0 1-.435-.077l-1.94-2.749a.314.314 0 0 1 .076-.438l.318-.22a.314.314 0 0 1 .436.077ZM20.683 0l.58 4.826 2.146-2.385.06 5.942-.426-.094c-1.242-.273-2.369-.41-3.379-.41a9.635 9.635 0 0 0-2.821.399l-.474.143.382-7.432 1.967 3.675L20.683 0Z"
+                    />
+                </svg>
+				<p class="!text-sm opacity-80">Inventory Management for everybody</p>
+			</div>
+			<div class="hidden md:grid grid-cols-3 gap-8">
+				<div class="space-y-6">
+					<h6 class="h6">Explore</h6>
+					<ul class="space-y-3">
+						<li><a class="anchor" href="/docs/introduction">Introduction</a></li>
+						<li><a class="anchor" href="/docs/get-started">Get Started</a></li>
+						<li><a class="anchor" href="/blog">Blog</a></li>
+					</ul>
+				</div>
+				<div class="space-y-6">
+					<h6 class="h6">Features</h6>
+					<ul class="space-y-3">
+						<li><a class="anchor" href="/elements/core">Tailwind</a></li>
+						<li><a class="anchor" href="/actions/clipboard">Svelte</a></li>
+						<li><a class="anchor" href="/utilities/codeblocks">Utilities</a></li>
+					</ul>
+				</div>
+				<div class="space-y-6">
+					<h6 class="h6">Project</h6>
+					<ul class="space-y-3">
+						<li>
+							<a class="anchor" href="https://github.com/skeletonlabs" target="_blank" rel="noreferrer">Github Organization</a>
+						</li>
+						<li>
+							<a class="anchor" href="https://www.npmjs.com/org/skeletonlabs" target="_blank" rel="noreferrer">NPM Organization</a>
+						</li>
+						<li>
+							<a class="anchor" href="https://www.npmjs.com/package/@skeletonlabs/skeleton" target="_blank" rel="noreferrer">NPM Package</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<hr class="opacity-20" />
+
+		<!-- Row 2 -->
+		<section class={cRowTwo}>
+			<p>
+				<a class="anchor" href="https://github.com/skeletonlabs/skeleton/blob/master/LICENSE" target="_blank" rel="noreferrer">
+					MIT License
+				</a>
+				<span class="opacity-10 mx-2">|</span>
+				<a class="anchor" href="https://skeletonlabs.co/" target="_blank" rel="noreferrer">Skeleton Labs </a>
+			</p>
+			<div class="flex space-x-4">
+				<a class="btn variant-soft" href="https://github.com/skeletonlabs/skeleton" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-github" />
+					<span class="hidden md:inline-block ml-2">Github</span>
+				</a>
+				<a class="btn variant-soft" href="https://discord.gg/EXqV7W8MtY" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-discord" />
+					<span class="hidden md:inline-block ml-2">Discord</span>
+				</a>
+				<a class="btn variant-soft" href="https://twitter.com/SkeletonUI" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-twitter" />
+					<span class="hidden md:inline-block ml-2">Twitter</span>
+				</a>
+				<a class="btn variant-soft" href="https://www.youtube.com/@skeletonlabs" target="_blank" rel="noreferrer">
+					<i class="fa-brands fa-youtube" />
+					<span class="hidden md:inline-block ml-2">YouTube</span>
+				</a>
+			</div>
+		</section>
+	</div>
+</div>
