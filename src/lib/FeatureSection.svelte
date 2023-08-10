@@ -7,7 +7,7 @@
 		{
 			title: 'Data Insights',
 			description:
-				'See current adn future Inventory levels at a glance. See how you can optimize your turnaround and maximize your cashflow with modern, meaningful and simple graphs',
+				'See current and future Inventory levels at a glance. See how you can optimize your turnaround and maximize your cashflow with modern, meaningful and simple graphs',
 			icon: IconDeviceAnalytics,
 			link: "/dataInsights" 
 		},
