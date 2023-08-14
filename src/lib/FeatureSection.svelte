@@ -28,7 +28,7 @@
 	]
 </script>
 
-<div class="container mx-auto max-w-screen-lg">
+<div class="container mx-auto max-w-screen-lg p-4">
 	<div class="text-center space-y-4">
 		
 		<div class="text-xl md:text-3xl font-bold">
