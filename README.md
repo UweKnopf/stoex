@@ -1,38 +1,48 @@
-# create-svelte
+# Stoex
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Description
 
-## Creating a project
+A modern and simple Inventory Management System.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Features
 
+WIP
+
+# Dev Stuff
+
+## Stack
+
+For hosting, analytics and speed monitoring we use [Vercel](https://vercel.com).
+
+- [Sveltkit](https://kit.svelte.dev/docs/introduction)
+- [Skeleton Ui](https://www.skeleton.dev/docs/get-started) for components and themes
+- [Superforms](https://superforms.rocks/) for form validation and user feedback
+- [Zod](https://zod.dev/) for form validation
+- [mySql](https://www.mysql.com/) for working data
+
+### mySql Auth
+This is a try to get Auth going without a managed service. 
+- [Lucia Auth](https://lucia-auth.com/) for handling a lot of auth boilerplate
+- [mySql](https://www.mysql.com/) for Auth
+### Firebase Auth
+- [Firebase](https://firebase.google.com/) managed auth
+- [Sveltfire](https://github.com/codediodeio/sveltefire/tree/master) making firebase work more easily
+
+
+## Getting Started with Contributing 
+
+1. Find an Issue to contribute to/make a new issue with a feature or change
+2. Fork master 
+3. Pull the Fork to your local machine
+4. Install all dependencies 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+    npm install
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+5. test if everything works locally
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+    npm run dev
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+6. Happy coding!
+7. Commit your changes locally
+8. Sync these changes with your fork
+9. Make a pull request to here
