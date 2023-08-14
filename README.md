@@ -24,7 +24,7 @@ For hosting, analytics and speed monitoring we use [Vercel](https://vercel.com).
 This is a try to get Auth going without a managed service. 
 - [Lucia Auth](https://lucia-auth.com/) for handling a lot of auth boilerplate
 - [mySql](https://www.mysql.com/) for Auth
-###
+### Firebase Auth
 - [Firebase](https://firebase.google.com/) managed auth
 - [Sveltfire](https://github.com/codediodeio/sveltefire/tree/master) making firebase work more easily
 
