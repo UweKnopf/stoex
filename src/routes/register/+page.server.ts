@@ -2,6 +2,9 @@ import { fail } from '@sveltejs/kit';
 import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
 
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+
 const schema = z.object({
     email: z.string().email(),
     password: z.string().min(6),
@@ -32,7 +35,18 @@ export const actions = {
       return fail(400, { form });
     }
 
-    // TODO: Do something with the validated data
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, form.data.email, form.data.password)
+    .then((userCredential) => {
+    // Signed in 
+      const user = userCredential.user;
+    // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
 
     return { form };
   }

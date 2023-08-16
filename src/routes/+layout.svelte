@@ -18,6 +18,33 @@
   	import { inject } from '@vercel/analytics';
   	inject({ mode: dev ? 'development' : 'production' });
 	//For Vercel speed insights
+	import { FirebaseApp } from 'sveltefire';
+    import { initializeApp } from 'firebase/app';
+    import { getFirestore } from 'firebase/firestore';
+    import { getAuth } from 'firebase/auth';
+
+    // Initialize Firebase
+	const firebaseConfig = {
+
+	apiKey: "AIzaSyDxssEknIJGSDLkiVJwCul7yy9G0ZyegI8",
+
+	authDomain: "stoex-4e7c7.firebaseapp.com",
+
+	projectId: "stoex-4e7c7",
+
+	storageBucket: "stoex-4e7c7.appspot.com",
+
+	messagingSenderId: "57306227091",
+
+	appId: "1:57306227091:web:66dffb2960c1a3edbc4866",
+
+	measurementId: "G-3P5W46YJMW"
+
+	};
+
+    const app = initializeApp(firebaseConfig);
+    const firestore = getFirestore(app);
+    const auth = getAuth(app);
 	
 </script>
 
@@ -27,9 +54,13 @@
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<CustomAppBar/>
-		
 	</svelte:fragment>
+
 	<!-- Page Route Content -->
-	<slot />
+	<FirebaseApp {auth} {firestore}>
+    	<slot />
+	</FirebaseApp>
+
+	<!-- App Footer -->
 	<CustomFooter/>
 </AppShell>
