@@ -33,7 +33,7 @@
             {#if $errors.email}<span class="invalid">{$errors.email}</span>{/if}
             <label class="label">
                 
-                <input required type="password" name="password" placeholder="Enter Password" class="input" 
+                <input required type="password" name="password" id="password" placeholder="Enter Password" class="input" 
                 aria-invalid={$errors.password ? 'true' : undefined}
                 bind:value={$form.password}
                 {...$constraints.password}/>
