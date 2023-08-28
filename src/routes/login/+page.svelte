@@ -28,7 +28,7 @@
         <form class="space-y-4" method="POST">
             <label for="email" class="label">
                 
-                <input required type="email" name="email" placeholder="Enter Email" class="input" 
+                <input required type="email" name="email" placeholder="Enter Email" class="input" id="email"
                 aria-invalid={$errors.email ? 'true' : undefined}
                 bind:value={$form.email}
                 {...$constraints.email}/>
@@ -36,7 +36,7 @@
             {#if $errors.email}<span class="invalid">{$errors.email}</span>{/if}
             <label class="label">
                 
-                <input required type="password" name="password" placeholder="Enter Password" class="input" 
+                <input required type="password" name="password" placeholder="Enter Password" class="input" id="password"
                 aria-invalid={$errors.password ? 'true' : undefined}
                 bind:value={$form.password}
                 {...$constraints.password}/>
