@@ -18,7 +18,7 @@ For hosting, analytics and speed monitoring we use [Vercel](https://vercel.com).
 - [Skeleton Ui](https://www.skeleton.dev/docs/get-started) for components and themes
 - [Superforms](https://superforms.rocks/) for form validation and user feedback
 - [Zod](https://zod.dev/) for form validation
-- [mySql](https://www.mysql.com/) for working data
+- [Prisma](https://www.mysql.com/) with [Cockroach DB](https://www.cockroachlabs.com/)  for working data
 
 ### Prisma Auth
 This is the current auth implementation in Prod. 
