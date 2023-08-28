@@ -20,12 +20,14 @@ For hosting, analytics and speed monitoring we use [Vercel](https://vercel.com).
 - [Zod](https://zod.dev/) for form validation
 - [mySql](https://www.mysql.com/) for working data
 
-### mySql Auth
-This is a try to get Auth going without a managed service. 
-- [Lucia Auth](https://lucia-auth.com/) for handling a lot of auth boilerplate
-- [mySql](https://www.mysql.com/) for Auth
+### Prisma Auth
+This is the current auth implementation in Prod. 
+- [Lucia Auth](https://lucia-auth.com/) for Session and User managment
+- [Prisma](https://www.mysql.com/) as the ORM
+- [Cockroach DB](https://www.cockroachlabs.com/) as Database (managed serverless cluster)
 ### Firebase Auth
-- [Firebase](https://firebase.google.com/) managed auth
+Possible future test as an exercise.
+- [Firebase](https://firebase.google.com/) managed auth/DB
 - [Sveltfire](https://github.com/codediodeio/sveltefire/tree/master) making firebase work more easily
 
 
