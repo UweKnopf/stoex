@@ -17,8 +17,8 @@ const schema = z.object({
     });
   }
 });
-
-export const load = async ( event ) => {
+//This event type feels yancky
+export const load = async ( event: { locals: { auth: { validate: () => any; }; }; } ) => {
   const session = await event.locals.auth.validate();
 	if (session) throw redirect(302, '/dashboard');
   // Server API:

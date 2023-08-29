@@ -1,7 +1,6 @@
 <script lang="ts">
  
-
-	import { IconGauge, IconUser, IconCookie, IconChartHistogram, IconRobot, IconDeviceAnalytics } from '@tabler/icons-svelte';
+	import { IconUser, IconRobot, IconDeviceAnalytics } from '@tabler/icons-svelte';
 	
 	const Features = [
 		{
