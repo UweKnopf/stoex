@@ -26,7 +26,7 @@
                     <svelte:component this={IconUser} class="text-4xl text-primary-500"/>             
                 </a>
                 <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://github.com/UweKnopf/stoex" target="_blank" rel="external">
-                    <svelte:component this={IconBrandGithub} class="text-4xl text-primary-500" href="https://github.com/UweKnopf/stoex"/>
+                    <svelte:component this={IconBrandGithub} class="text-4xl text-primary-500"/>
                 </a>
             </section>
         </div>

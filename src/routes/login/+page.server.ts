@@ -3,7 +3,6 @@ import { superValidate } from 'sveltekit-superforms/server';
 
 import { auth } from "$lib/server/lucia";
 import { fail, redirect } from "@sveltejs/kit";
-import type { Actions, PageServerLoad } from "./$types";
 
 const schema = z.object({
     email: z.string().email(),
@@ -42,7 +41,7 @@ export const actions = {
 				userId: user.userId,
 				attributes: {}
 			});
-      console.log(session);
+      	console.log(session);
 			locals.auth.setSession(session); // set session cookie
 		} catch (e) {
 			console.log(e)
@@ -52,8 +51,6 @@ export const actions = {
 		}
 		// redirect to
 		// make sure you don't throw inside a try/catch block!
-		throw redirect(302, "/");
-
-    return { form };
+		throw redirect(302, "/dashboard");
   }
 };
