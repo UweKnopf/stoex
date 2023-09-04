@@ -2,7 +2,7 @@
 	
 	<div class="relative z-[1] space-y-6 pt-32 pb-24">
 		<div class="font-bold text-4xl tracking-tight">
-			Inventory managment made <span class="text-primary-500">simple!</span>
+			Inventory management made <span class="text-primary-500">simple!</span>
 		</div>
 		<p class="max-w-lg opacity-70 md:mx-auto">
 			Get all the information you need in a just a few clicks, just like that!
