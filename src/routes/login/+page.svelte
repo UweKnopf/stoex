@@ -2,8 +2,9 @@
 	import { IconBrandGoogle } from '@tabler/icons-svelte';
 
     //import type { PageData } from './$types';
-    import { superForm } from 'sveltekit-superforms/client';
-    import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
+    import { superForm } from 'sveltekit-superforms/client'
+    // For Debug only
+    //import SuperDebug from 'sveltekit-superforms/client/SuperDebug.svelte';
 
     export let data;
 
@@ -11,7 +12,7 @@
   const { form, errors, constraints } = superForm(data.form);
 </script>
 
-<SuperDebug data={$form} />
+<!-- For Debug only  <SuperDebug data={$form} /> -->
 
 <div class="container justify-center mx-auto p-24 text-center max-w-xl">
     <div class="card p-6 space-y-6 shadow-xl">
