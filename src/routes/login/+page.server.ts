@@ -11,7 +11,7 @@ const schema = z.object({
 
 export const load = async (event) => {
   const session = await event.locals.auth.validate();
-	if (session) throw redirect(302, '/dashboard');
+  if (session) throw redirect(302, '/dashboard');
   // Server API:
   const form = await superValidate(schema);
 
