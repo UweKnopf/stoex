@@ -11,10 +11,11 @@ datasource db {
 }
 
 model User {
-  id           String    @id @unique
+  id String @id @unique
 
   auth_session Session[]
   key          Key[]
+  post         Post[]
 }
 
 model Session {
@@ -34,4 +35,13 @@ model Key {
   user            User    @relation(references: [id], fields: [user_id], onDelete: Cascade)
 
   @@index([user_id])
+}
+
+model Post {
+  id         String @id @unique
+  product_id String
+  name       String
+  number     Int
+  user_id    String
+  user       User   @relation(references: [id], fields: [user_id], onDelete: Cascade)
 }
