@@ -38,7 +38,7 @@ model Key {
 }
 
 model Post {
-  id         String @id @unique
+  id         BigInt @id @default(autoincrement())
   product_id String
   name       String
   number     Int
