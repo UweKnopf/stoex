@@ -91,4 +91,20 @@ export const actions: Actions = {
 
         
     },
+    deleteUser: async ( event ) => {
+        const authRequest = auth.handleRequest(event);
+        //console.log(authRequest);
+        const session = await authRequest.validate();
+        //console.log(session);
+	    if (!session) throw redirect(302, '/login');
+        //prisma.user.findUniqueOrThrow
+        const req = event.request
+        console.log('POST', req);
+        try {
+            await auth.deleteUser(session.user.userId)
+        } catch (e) {
+            console.log(e)
+        }
+        
+    },
 }

@@ -75,3 +75,8 @@
     </div>
 </div>
 
+<form method="POST" action="?/deleteUser">
+    <!-- content -->
+    <button class="btn variant-filled-primary">Delete User</button>
+</form>
+
