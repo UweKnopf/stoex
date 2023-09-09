@@ -12,7 +12,7 @@
 
 <!-- For Debug only <SuperDebug data={$form} /> -->
 
-<div class="container justify-center mx-auto p-24 text-center max-w-xl">
+<div class="container justify-center mx-auto p-6 md:p-24 text-center max-w-xl">
     <div class="card p-6 space-y-6 shadow-xl">
         <p class="font-semibold">Welcome, register with</p>
         <div class="flex flex-wrap space-y-4 space-x-0 md:flex-nowrap md:space-x-4 md:space-y-0">

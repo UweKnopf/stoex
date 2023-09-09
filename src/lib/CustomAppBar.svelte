@@ -21,7 +21,7 @@
     </svelte:fragment>
     <svelte:fragment slot="trail">
         <div class="flex items-center mr-4">
-            <section class="hidden sm:inline-flex space-x-4">
+            <section class="sm:inline-flex space-x-4">
                 <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="/" target="_blank" rel="external">
                     <svelte:component this={IconUser} class="text-4xl text-primary-500"/>             
                 </a>

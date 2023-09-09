@@ -1,4 +1,6 @@
 <script lang="ts">
+
+	//all snatched from Skeleton Ui
 	
 	// eslint-disable-next-line no-undef
 	//const pkg = __PACKAGE__;
@@ -24,7 +26,7 @@
                     />
                 </svg>
 				<p class="!text-sm opacity-80">Inventory Management for everybody</p>
-                <p class="!text-sm opacity-80">© 2023 Stoex UG</p>
+                <p class="!text-sm opacity-80">© 2023 Test WIP</p>
 			</div>
 			<div class="hidden md:grid grid-cols-2 gap-8">
 				<div class="space-y-6">
@@ -51,11 +53,11 @@
 		<!-- Row 2 -->
 		<section class={cRowTwo}>
 			<p>
-				<a class="anchor" href="/" target="_blank" rel="noreferrer">
+				<a class="anchor" href="/" target="_self" rel="noreferrer">
 					Impressum
 				</a>
 				<span class="opacity-10 mx-2">|</span>
-				<a class="anchor" href="/" target="_blank" rel="noreferrer">
+				<a class="anchor" href="/" target="_self" rel="noreferrer">
                     Privacy Policy
                 </a>
 			</p>
