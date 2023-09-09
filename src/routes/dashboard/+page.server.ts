@@ -48,7 +48,7 @@ export const actions: Actions = {
 	    if (!session) throw redirect(302, '/login');
 
         const form = await superValidate(event.request, schema);
-        console.log('POST', form);
+        //console.log('POST', form);
         try {
             const newpost = await prisma.post.create({
                 data: {
@@ -60,7 +60,7 @@ export const actions: Actions = {
                     
                 }
             })
-            console.log(newpost)
+            //console.log(newpost)
         } catch (e) {
             console.log(e)
         }
@@ -74,9 +74,9 @@ export const actions: Actions = {
 	    if (!session) throw redirect(302, '/login');
 
         const form = await superValidate(event.request, delschema);
-        console.log('POST', form);
-        const req = event.request
-        console.log('POST', req);
+        //console.log('POST', form);
+        //const req = event.request
+        //console.log('POST', req);
         try {
             await prisma.post.delete({
                 where: {
@@ -99,7 +99,7 @@ export const actions: Actions = {
 	    if (!session) throw redirect(302, '/login');
         //prisma.user.findUniqueOrThrow
         const req = event.request
-        console.log('POST', req);
+        //console.log('POST', req);
         try {
             await auth.deleteUser(session.user.userId)
         } catch (e) {
