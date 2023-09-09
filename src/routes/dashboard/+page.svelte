@@ -3,6 +3,7 @@
 
     //import myData from '../dashboard/+page'
     import type { PageData } from './$types';
+    import { IconTrashX } from '@tabler/icons-svelte';
     //export let data;
     //const { form, errors, constraints } = superForm(data.form);
     const myData =[
@@ -56,13 +57,13 @@
                     {#each $rows as row}
                     <tr>
                         
-                        <td>{row.id}</td>
+                        
                         <td>{row.product_id}</td>
                         <td>{row.name}</td>
                         
                         <td>
                             <form method="POST" action="?/deleteEntry" >
-                                <button name="id" value={row.id}>AA</button>
+                                <button class="btn variant-outline-primary" name="id" value={row.id}><svelte:component this={IconTrashX} class="text-4xl text-primary-500"/></button>
                             </form>
                         </td>
                             
@@ -75,7 +76,7 @@
 </div>
 
 <form method="POST" action="?/deleteUser">
-    <!-- content -->
+    <!-- content maybe user-x as icon?-->
     <button class="btn variant-filled-primary">Delete User</button>
 </form>
 
