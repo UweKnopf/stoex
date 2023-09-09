@@ -56,13 +56,14 @@
                     {#each $rows as row}
                         <form method="POST" action="?/deleteEntry" >
                             <tr>
-                                <input type="hidden" value={row.id}/>
+                                
                                 <td>{row.id}</td>
                                 <td>{row.product_id}</td>
                                 <td>{row.name}</td>
                                 
                                 <td>
-                                    <button>AA</button>
+                                    
+                                    <button name="id" value={row.id}>AA</button>
                                 </td>
                             </tr>
 

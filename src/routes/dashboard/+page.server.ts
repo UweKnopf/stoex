@@ -66,7 +66,7 @@ export const actions: Actions = {
         }
 
     },
-    deleteEntry: async ( event) => {
+    deleteEntry: async ( event ) => {
         const authRequest = auth.handleRequest(event);
         //console.log(authRequest);
         const session = await authRequest.validate();
@@ -75,10 +75,13 @@ export const actions: Actions = {
 
         const form = await superValidate(event.request, delschema);
         console.log('POST', form);
+        const req = event.request
+        console.log('POST', req);
         try {
             await prisma.post.delete({
                 where: {
                     id: BigInt(form.data.id),
+                    user_id: session.user.userId,
                 }
             })
             
