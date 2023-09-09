@@ -54,20 +54,19 @@
                 </thead>
                 <tbody>
                     {#each $rows as row}
+                    <tr>
+                        
+                        <td>{row.id}</td>
+                        <td>{row.product_id}</td>
+                        <td>{row.name}</td>
+                        
                         <form method="POST" action="?/deleteEntry" >
-                            <tr>
+                            <td>
+                                <button name="id" value={row.id}>AA</button>
+                            </td>
                                 
-                                <td>{row.id}</td>
-                                <td>{row.product_id}</td>
-                                <td>{row.name}</td>
-                                
-                                <td>
-                                    
-                                    <button name="id" value={row.id}>AA</button>
-                                </td>
-                            </tr>
-
                         </form>
+                        </tr>
                     {/each}
                 </tbody>
             </table>
