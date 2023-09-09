@@ -5,7 +5,7 @@
 		{
 			title: 'Data Insights',
 			description:
-				'See current and future Inventory levels at a glance. See how you can optimize your turnaround and maximize your cashflow with modern, meaningful and simple graphs',
+				'Always know your current stockpile and leverage our best of class AI to get suggestions and future predictions to optimize capital flow',
 			icon: IconDeviceAnalytics,
 			link: "/dataInsights" 
 		},
@@ -19,7 +19,7 @@
 		{
 			title: 'Privacy Focused',
 			description:
-				'With servers hosted in the EU you can be sure that your critical business data is protected',
+				'With servers hosted in the EU you can be sure that your critical business data gets the best protection',
 			icon: IconUser,
 			link: "/privacy"
 		},
@@ -35,7 +35,7 @@
 		<p
 			class="max-w-xl opacity-60 mx-auto after:mx-auto after:mt-3 after:bg-primary-500 after:w-12 after:h-0.5 after:block"
 		>
-			Running a business is already hard, so why not let us help you with all that repetitive and tedious work.
+			Running a business is already hard, so why not let us help you with all that repetitive and tedious work?
 		</p>
 	</div>
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-16">
