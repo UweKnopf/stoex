@@ -60,12 +60,12 @@
                         <td>{row.product_id}</td>
                         <td>{row.name}</td>
                         
-                        <form method="POST" action="?/deleteEntry" >
-                            <td>
+                        <td>
+                            <form method="POST" action="?/deleteEntry" >
                                 <button name="id" value={row.id}>AA</button>
-                            </td>
-                                
-                        </form>
+                            </form>
+                        </td>
+                            
                         </tr>
                     {/each}
                 </tbody>
