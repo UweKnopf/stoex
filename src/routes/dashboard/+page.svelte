@@ -1,5 +1,10 @@
 <script lang="ts">
+	import { superForm } from 'sveltekit-superforms/client';
+
     //import myData from '../dashboard/+page'
+    import type { PageData } from './$types';
+    //export let data;
+    //const { form, errors, constraints } = superForm(data.form);
     const myData =[
     { id: 1, first_name: 'Tobie', last_name: 'Vint', email: 'tvint0@fotki.com' },
     { id: 2, first_name: 'Zacharias', last_name: 'Cerman', email: 'zcerman1@sciencedirect.com' },
@@ -21,10 +26,20 @@
 ]
     import { DataHandler, Datatable } from '@vincjo/datatables' 
 
-    const handler = new DataHandler(myData, { rowsPerPage: 10 })
+    export let data: PageData;
+    
+
+    const handler = new DataHandler(data.data, { rowsPerPage: 10 })
     const rows = handler.getRows()
 
 </script>
+<form method="POST" action="?/createEntry">
+    <input required  name="product_id" placeholder="Enter Product Id" class="input p-2" />
+    <input required  name="product_name" placeholder="Enter Product Name" class="input p-2" />
+            
+    <!-- content -->
+    <button class="btn variant-filled-primary">Test Post</button>
+</form>
 
 <div class="m-8"> 
     <div class="table-container">
@@ -32,20 +47,36 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>First name</th>
-                        <th>Last name</th>
+                        <th>Product Id</th>
+                        <th>Product Name</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     {#each $rows as row}
-                        <tr>
-                            <td>{row.first_name}</td>
-                            <td>{row.last_name}</td>
-                        </tr>
+                        <form method="POST" action="?/deleteEntry" >
+                            <tr>
+                                
+                                <td>{row.id}</td>
+                                <td>{row.product_id}</td>
+                                <td>{row.name}</td>
+                                
+                                <td>
+                                    
+                                    <button name="id" value={row.id}>AA</button>
+                                </td>
+                            </tr>
+
+                        </form>
                     {/each}
                 </tbody>
             </table>
         </Datatable>
     </div>
 </div>
+
+<form method="POST" action="?/deleteUser">
+    <!-- content -->
+    <button class="btn variant-filled-primary">Delete User</button>
+</form>
 
