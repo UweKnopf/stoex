@@ -34,6 +34,6 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps
       - name: Run tests
-        run: npm run test:e2e
+        run: npm run test
         env:
           PLAYWRIGHT_TEST_BASE_URL: ${{ needs.test_setup.outputs.preview_url }}
