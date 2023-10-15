@@ -17,6 +17,12 @@
                     StoeX
                 </a>
             </strong>
+            <strong class="text-x ml-8">
+                <a class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden" href="/subscription" title="Go to Homepage">
+                    Pricing
+                </a>
+            </strong>
+
         </div>
     </svelte:fragment>
     <svelte:fragment slot="trail">
