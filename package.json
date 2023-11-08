@@ -48,10 +48,10 @@
   "type": "module",
   "dependencies": {
     "@lucia-auth/adapter-prisma": "^3.0.2",
-    "@prisma/client": "^5.4.2",
-    "@tabler/icons-svelte": "^2.39.0",
+    "@prisma/client": "^5.5.2",
+    "@tabler/icons-svelte": "^2.40.0",
     "@vercel/analytics": "^1.1.1",
     "lucia": "^2.7.3",
-    "prisma": "^5.4.2"
+    "prisma": "^5.5.2"
   }
 }
