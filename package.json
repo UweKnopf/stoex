@@ -15,7 +15,7 @@
     "postinstall": "prisma generate"
   },
   "devDependencies": {
-    "@floating-ui/dom": "^1.5.3",
+    "@floating-ui/dom": "^1.5.4",
     "@playwright/test": "^1.39.0",
     "@skeletonlabs/skeleton": "^2.5.0",
     "@skeletonlabs/tw-plugin": "^0.2.4",
@@ -30,11 +30,11 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-svelte": "^2.35.0",
-    "postcss": "^8.4.31",
+    "eslint-plugin-svelte": "^2.35.1",
+    "postcss": "^8.4.33",
     "prettier": "^3.0.3",
     "prettier-plugin-svelte": "^3.0.3",
-    "svelte": "^4.2.7",
+    "svelte": "^4.2.8",
     "svelte-check": "^3.5.2",
     "sveltekit-superforms": "^1.10.2",
     "tailwindcss": "^3.3.5",
@@ -51,7 +51,7 @@
     "@prisma/client": "^5.5.2",
     "@tabler/icons-svelte": "^2.40.0",
     "@vercel/analytics": "^1.1.1",
-    "lucia": "^2.7.4",
+    "lucia": "^2.7.6",
     "prisma": "^5.5.2"
   }
 }
