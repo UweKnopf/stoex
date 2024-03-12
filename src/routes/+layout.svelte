@@ -1,35 +1,33 @@
-<script lang='ts'>
-  	import CustomAppBar from '../lib/CustomAppBar.svelte';
-  	import CustomFooter from '../lib/CostumeFooter.svelte'
+<script lang="ts">
+    import { FirebaseApp } from 'sveltefire';
+    import { initializeApp } from 'firebase/app';
+    import { getFirestore } from 'firebase/firestore';
+    import { getAuth } from 'firebase/auth';
 
-	// The ordering of these imports is critical to your app working properly
-	
-	// If you have source.organizeImports set to true in VSCode, then it will auto change this ordering
-	
-	// Most of your app wide CSS should be put in this file
-	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
+	const firebaseConfig = {
 
+apiKey: "AIzaSyDMDR0f2XFy1jcEdPVW9iooMlxjVpqzxhs",
 
+authDomain: "stoex-acc17.firebaseapp.com",
 
+projectId: "stoex-acc17",
 
-	//For vercel analytics
-	import { dev } from '$app/environment';
-  	import { inject } from '@vercel/analytics';
-  	inject({ mode: dev ? 'development' : 'production' });
-	//For Vercel speed insights
-	
+storageBucket: "stoex-acc17.appspot.com",
+
+messagingSenderId: "110358725874",
+
+appId: "1:110358725874:web:0dc37c6dacf99a79ef3c6b",
+
+measurementId: "G-29SQBFXYVN"
+
+};
+
+    // Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const firestore = getFirestore(app);
+const auth = getAuth(app);
 </script>
 
-
-<!-- App Shell -->
-<AppShell>
-	<svelte:fragment slot="header">
-		<!-- App Bar -->
-		<CustomAppBar/>
-		
-	</svelte:fragment>
-	<!-- Page Route Content -->
-	<slot />
-	<CustomFooter/>
-</AppShell>
+<FirebaseApp {auth} {firestore}>
+    <slot />
+</FirebaseApp>
