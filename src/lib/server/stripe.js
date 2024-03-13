@@ -5,5 +5,5 @@ import { env } from '$env/dynamic/private'
 // @ts-ignore
 export const stripe = new Stripe(env.SECRET_STRIPE_KEY, {
     // pin the api version
-    apiVersion: '2023-10-16'
+    apiVersion: '2022-11-15'
 })
