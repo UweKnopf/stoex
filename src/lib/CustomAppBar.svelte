@@ -17,6 +17,9 @@
                     StoeX
                 </a>
             </strong>
+            <a class="lg:!ml-0 w-[32px] lg:w-auto overflow-hidden" href="/pricing" title="Go to Pricing">
+                Pricing
+            </a>
         </div>
     </svelte:fragment>
     <svelte:fragment slot="trail">
