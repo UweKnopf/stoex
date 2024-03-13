@@ -19,11 +19,11 @@ updates:
         dependency-type: "production"
         update-types:
         - "minor"
-        - "major"
+        
       dev-major:
         dependency-type: "development"
         update-types:
         - "minor"
-        - "major"
+       
         
         
