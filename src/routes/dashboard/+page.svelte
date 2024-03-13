@@ -41,7 +41,7 @@
                         
                         <td>
                             <form method="POST" action="?/deleteEntry" >
-                                <button class="btn" name="id" value={String(row.id)}><svelte:component this={IconTrashX}/></button>
+                                <button class="btn" name="id" value={row.id}><svelte:component this={IconTrashX}/></button>
                             </form>
                         </td>
                             
